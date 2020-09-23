@@ -12,6 +12,10 @@
     <jsp-file>/jsp/WhatIsServerIP.jsp</jsp-file>
   </servlet>
   <servlet>
+    <servlet-name>GetStatus</servlet-name>
+    <servlet-class>com.jelastic.GetStatus</servlet-class>
+  </servlet>
+  <servlet>
     <servlet-name>ClearSession</servlet-name>
     <jsp-file>/jsp/ClearSession.jsp</jsp-file>
   </servlet>
@@ -19,6 +23,11 @@
   <servlet-mapping>
     <servlet-name>WhatIsServerIP</servlet-name>
     <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>GetStatus</servlet-name>
+    <url-pattern>/status</url-pattern>
   </servlet-mapping>
 
   <servlet-mapping>
