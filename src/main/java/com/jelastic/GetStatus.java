@@ -13,7 +13,7 @@ public class GetStatus extends HttpServlet {
     private void processRequest(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         resp.setContentType("application/json");
         PrintWriter out = resp.getWriter();
-        out.println("{\"result\": 0}");
+        out.println("{\"result\":0}");
     }
 
     @Override
